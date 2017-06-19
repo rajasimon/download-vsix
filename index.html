@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Download VSIX</title>
+</head>
+<body>
+  <script>
+    let params = (new URL(document.location)).searchParams;
+    const publisher = params.get('publisher')
+    const extension = params.get('extension')
+    const version = params.get('version')
+
+    console.log(publisher)
+    console.log(extension)
+    console.log(version)
+
+    const redirectURL = "https://"+ publisher + ".gallery.vsassets.io/_apis/public/gallery/publisher/" + publisher + "/extension/" + extension + "/" + version + "/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage"
+    window.location = redirectURL
+  </script>
+</body>
+</html>
