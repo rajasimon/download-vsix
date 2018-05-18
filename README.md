@@ -1,14 +1,14 @@
 # download-vsix
-Download Visual studio code vsix package
+Download [Visual Studio Code](https://code.visualstudio.com/) VSIX packages
 
 ### GET Argument
 
-vsix extension can be donwload using supplying below argument to https://rajasimon.github.io/download-vsix/ url
+VSIX extensions can be downloaded by supplying the following arguments as query parameters to the https://rajasimon.github.io/download-vsix/ URL:
 
-1. pulisher
+1. publisher
 2. extension
 3. version
 
-https://rajasimon.github.io/download-vsix?publisher=publisher&extension=extension&version=version
+like this: `https://rajasimon.github.io/download-vsix?publisher=<publisher>&extension=<extension>&version=<version>`
 
-And finally do not forgot to rename the donwload pacakge to `your_extension.vsix`
+Do not forget to rename the downloaded package to `your_extension.vsix`
